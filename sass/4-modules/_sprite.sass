@@ -1,0 +1,23 @@
+
+//SOCIAL MEDIA
+@mixin Sprite($x, $y:0, $sprite:url('../images/social-media.png'))
+    background: $x $y $sprite
+.social-media
+    margin: 0 auto
+    width: 165px
+    div
+        float: left
+        margin-right: 5px
+    a
+        display: block
+        width: 36px
+        height: 36px
+        text-indent: -9999px
+    .one
+        @include Sprite(0)
+    .two
+        @include Sprite(-38px)
+    .three
+        @include Sprite(-76px)
+    .four
+        @include Sprite(-114px)

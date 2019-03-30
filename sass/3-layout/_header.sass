@@ -1,0 +1,23 @@
+//HEADER
+
+@mixin headerStyle($color, $font-weight, $font-size, $margin-bottom: inherited, $line-height: 25px)
+    color: $color
+    font-weight: $font-weight
+    font-size: $font-size
+    line-height: $line-height
+    margin-bottom: $margin-bottom
+
+header
+    width: inherit
+    clear: both
+    text-align: center
+    padding-top: 40px
+    img
+        max-width: 100%
+        height: auto
+    h1
+        @include headerStyle($orange, $font-weight, ($font-size * 4))
+    h2
+        @include headerStyle($white, ($font-weight * 9), ($font-size * 2.5), 70px)
+    h3
+        @include headerStyle($grey, ($font-weight * 4), ($font-size * 2), 50px)

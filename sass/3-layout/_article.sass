@@ -1,0 +1,37 @@
+//CONTENT
+#headline
+    width: 100%
+    height: 130px
+    background: lighten($orange, 5%)
+    text-align: center
+    margin: 0 auto
+    h1
+        color: $white
+        font-size: $font-size * 2.5
+        font-weight: $font-weight
+        padding-top: 50px
+
+#content
+    width: $widthBody
+    margin: 20px auto
+    h3
+        color: $grey
+        font-size: $font-size * 2
+        font-weight: $font-weight * 4
+    #products
+        width: percentage($widthContentCol/$widthBody)
+        float: left
+        img
+            float: left
+            margin-right: 20px
+        article
+            margin-bottom: 40px
+        h4
+            line-height: 1em
+        a
+            &:hover
+                color: $orange
+
+    #testimonials
+        width: percentage($widthContentCol/$widthBody)
+        float: right
